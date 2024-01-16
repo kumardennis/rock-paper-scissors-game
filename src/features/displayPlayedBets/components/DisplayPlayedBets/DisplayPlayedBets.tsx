@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { AppContext } from 'shared/contexts/App.context';
-import { NoPlayedBets } from '../NoPlayedBets/NoPlayedBets';
-import { PlayedBetsAndResults } from '../PlayedBetsAndResults/PlayedBetsAndResults';
+import { NoPlayedBets } from 'features/displayPlayedBets/components/NoPlayedBets/NoPlayedBets';
+import { PlayedBetsAndResults } from 'features/displayPlayedBets/components/PlayedBetsAndResults/PlayedBetsAndResults';
 
 export const DisplayPlayedBets = (): JSX.Element => {
   const { appData } = useContext(AppContext);

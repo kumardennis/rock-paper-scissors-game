@@ -1,6 +1,9 @@
 import { MemoizedBetItem } from 'features/betting/components/BetItem/BetItem';
 
-import { useBetData, useOnBetClick } from '../../hooks/BetItem.hooks';
+import {
+  useBetData,
+  useOnBetClick,
+} from 'features/betting/hooks/BetItem.hooks';
 import { useContext } from 'react';
 import { BetsContext } from 'shared/contexts/Bets.context';
 

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { AppContext } from 'shared/contexts/App.context';
-import { SlotMachineTextEffect } from '../SlotMachineTextEffect/SlotMachineTextEffect';
+import { SlotMachineTextEffect } from 'features/displayPlayedBets/components/SlotMachineTextEffect/SlotMachineTextEffect';
 
 export const PlacedBets = (): JSX.Element => {
   const { appData } = useContext(AppContext);

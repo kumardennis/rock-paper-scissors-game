@@ -1,10 +1,10 @@
 import { AppDataType } from 'shared/types/App.types';
 import { BetsType } from 'shared/types/BetItem.types';
 import { betAmountConstants } from 'shared/utils/constants';
-import { dealBettingRound } from '../utils/dealBettingRound';
-import { getComputersBet } from '../utils/getComputersBet';
-import { getPlayerBetsAsList } from '../utils/getPlayerBetsAsList';
-import { resetBets } from '../utils/resetBets';
+import { dealBettingRound } from 'features/core/utils/dealBettingRound';
+import { getComputersBet } from 'features/core/utils/getComputersBet';
+import { getPlayerBetsAsList } from 'features/core/utils/getPlayerBetsAsList';
+import { resetBets } from 'features/core/utils/resetBets';
 
 export const useBettingRound = (
   appData: AppDataType,
