@@ -1,3 +1,57 @@
+# Rock, Paper, Scissors - Betting Game
+
+This project is a simple game of Rock, Paper, Scissors. Player plays against computer and can bet on every round.
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- A modern web browser
+
+### Installing dependencies
+
+Run command in your root directory
+
+```
+npm install
+```
+
+Or you can use yarn
+
+```
+yarn install
+```
+
+### Start development server
+
+Run command in your root directory
+
+```
+npm start
+```
+
+Or you can use yarn
+
+```
+yarn start
+```
+
+The server will start on
+
+```
+http://localhost:3000
+```
+
+## Future development
+
+This Project follows a feature-based folder structure. Features should be self contained, only exception to `core`. For state management, Context API has been used. Keep contexts also self contained and expose it to only features that needs them.
+
+Wherever possible try not to nest conditional JSX rendering: Abstraction of these statements should be used.
+
+Business complex logic should be in their own seperate hooks.
+
+Hooks should use utilitiy methods to keep SoC/SRP principles in place.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

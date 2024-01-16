@@ -1,0 +1,24 @@
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.slot {
+  overflow: hidden;
+  height: var(--font-size-lg); /* Adjust based on font size */
+  line-height: var(--font-size-lg); /* Same as height for vertical centering */
+  margin: 5px;
+}
+
+.slot > span {
+  display: flex;
+  flex-direction: column;
+  animation: scroll 0.5s steps(6) infinite;
+}

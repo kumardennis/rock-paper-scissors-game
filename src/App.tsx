@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import { AppContext, initialValue } from 'shared/contexts/App.context';
+import { AppDataType } from 'shared/types/App.types';
+import { GameBoard } from 'features/core/components/GameBoard/GameBoard';
+import ErrorBoundary from 'ErrorBoundary';
 
 function App() {
+  const [appData, setAppData] = useState<AppDataType>(initialValue);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary>
+      <AppContext.Provider value={{ appData, setAppData }}>
+        <div className="App">
+          <GameBoard />
+        </div>
+      </AppContext.Provider>
+    </ErrorBoundary>
   );
 }
 

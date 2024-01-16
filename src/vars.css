@@ -1,0 +1,19 @@
+:root {
+  --green: #4ae24a;
+  --blue: #4e5ff1;
+  --red: #eb4141;
+  --light: #ffffff;
+  --gold: #ffce46;
+  --dark: #141414;
+  --dark-green: #085008;
+  --dark-blue: #0b1363;
+  --dark-red: #520a0a;
+
+  --font-size-sm: 14px !important;
+  --font-size-md: 20px !important;
+  --font-size-lg: 26px !important;
+
+  --font-weight-default: 500;
+  --font-weight-500: var(--font-weight-default);
+  --font-weight-600: 600;
+}
